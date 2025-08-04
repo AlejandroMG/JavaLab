@@ -8,6 +8,7 @@ public class Estudiante {
     private String nombre;
     private int edad;
     private Optional<String> email;
+    // Estudiante tiene una lista de cursos inscritos
     private List<Curso> cursosInscritos;
 
     public Estudiante(String nombre, int edad, String email){
@@ -16,6 +17,8 @@ public class Estudiante {
         this.email = Optional.of(email);
         this.cursosInscritos = new ArrayList<>();
     }
+
+
     public String getNombre() {
         return nombre;
     }
@@ -32,4 +35,5 @@ public class Estudiante {
     public void inscribirCurso(Curso curso){
         this.cursosInscritos.add(curso);
     }
+
 }

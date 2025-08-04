@@ -14,5 +14,7 @@ public class Curso {
     public String getCodigoCurso() {
         return codigoCurso;
     }
-
+    public String toString(){
+        return nombreCurso + " (" + codigoCurso + ") ";
+    }
 }

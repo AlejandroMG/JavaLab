@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RepositorioMemoria implements RepositorioEstudiante {
-    private Map<String, Estudiante> estudiantes= new HashMap<>();
+    private final Map<String, Estudiante> estudiantes;
+
+    public RepositorioMemoria() {
+        estudiantes = new HashMap<>();
+    }
 
     @Override
     public void guardar(Estudiante estudiante) {
