@@ -5,6 +5,7 @@ public class Impresora {
 
     private Impresora() {}
 
+    // public static synchronized Impresora getInstance(){} para multihilo
     public static Impresora getInstance() {
         if (instance == null) {
             instance = new Impresora();
